@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Robotobold.ttf);
+    font-weight: bold;
+}
+body {
+    font-family: Roboto, sans-serif;
+}
+/*Шапка сайта*/
+.header{
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+}
+.logo  img{
+    vertical-align: bottom;
+}
+.menu{
+    margin-left: 244px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu__item{
+    margin-right: 115px;
+}
+.menu__item a{
+    font-size: 15px;
+    color: #030305;
+    text-decoration: none;
+}
+.menu__item a:hover{
+    border-bottom: 2px solid black;
+}
+.main{
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 104px 0 154px 0;
+}
+.main__info{
+    max-width: 855px;
+}
+.main__title{
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 110%;
+    color: #030305;
+    margin-bottom: 40px;
+}
+.main__text{
+    font-size: 16px;
+    line-height: 100%;
+    color: #030305;
+    max-width: 502px;
+    margin-bottom: 40px;
+}
+.button{
+    padding: 20px;
+    width: 334px;
+    height: 64px;
+    background-color: #030305;
+    border: 0;
+    box-sizing: border-box;
+
+
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0,02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: #575757;
+    cursor: pointer;
+}
+.car{
+    padding: 100px 0;
+}
+.sub__title{
+    font-weight: bold;
+    font-size: 60px;
+    color: #030305;
+    line-height: 70px;
+}
+.car__items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.car__item{
+    max-width: 384px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.car__item-image:hover img{
+    transform: scale(1.3);
+}
+.car__item-image img{
+    vertical-align: bottom;
+    transition: 0.9s;
+}
+.car__item-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #030305;
+    padding: 15px 0 17px 0;
+}
+.car__item-action{
+    margin-top: 13px;
+}
+.car__item-action .button{
+    width: 100%;
+    padding: 15px;
+    height: 54px;
+}
+.price{
+    overflow: hidden;
+}
+.price .container{
+    position: relative;
+    padding-bottom: 121px;
+}
+.price .sub__title{
+    margin-bottom: 20px;
+}
+.price__text{
+    font-size: 16px;
+    line-height: 100%;
+    color: #030305;
+    margin-bottom: 60px;
+}
+.car__item-info p{
+ font-size: 16px;
+}
+.car__item-info{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 13px;
+}
+.sub-title{
+    font-weight: bold;
+    font-size: 60px;
+    color: #030305;
+    line-height: 70px;
+}
+.price__text{
+    font-size: 16px;
+    color: #5D5D5F;
+    margin-top: 20px;
+}
+.car-item-info2{
+    width: 110px;
+    height: 92px;
+    background-color: aqua;
+}
+.price__form{
+    max-width: 344px;
+}
+.price__input{
+    padding: 22px 18px;
+    width: 344px;
+    height: 65px;
+    background-color: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    color: #000000;
+    outline: none;
+    margin-bottom: 15px;
+}
+.price__input::placeholder{
+    color: #5D5D5F;
+}
+.price button{
+    width: 100%;
+}
+.price__image{
+    position: absolute;
+    left: 401px;
+    bottom: 0;
+}
+/*Футер*/
+.footer{
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right{
+    font-size: 15px;
+    color: #030305;
+}
+.navbar-toggler{
+    display: none;
+}
+.show{
+    display: block;
+}
+@media(max-width:480px){
+    .menu{
+        display: none;
+        width: 100%;
+    }
+    .navbar-toggler{
+        display: block;
+        border: none;
+    }
+   .mainmenu__list{
+    flex-direction: column;
+   }
+   .main__title{
+    font-size: 40px;
+    padding-left: 3px;
+   }
+   .main__text{
+    padding-left: 3px;
+    width: 350px;
+    font-size: 15px;
+   }
+   .button{
+    font-size: 13px;
+    padding: 10px;
+    margin-left: 25px;
+   }
+   .main{
+    background-image: none;
+   }
+   .sub__title{
+    font-size: 40px;
+    padding-left: 3px;
+   }
+   .car__item-action .button{
+    width: 250px;
+    padding: 10px;
+    height: 54px;
+    margin-right: 20px;
+}   
+    .sub-title{
+    font-size: 40px;
+    padding-left: 3px;
+    }
+    .price__text{
+        margin-left: 5px;
+    }
+    .price__input{
+        padding: 17px 8px;
+        width: 344px;
+        height: 65px;
+        background-color: #FFFFFF;
+        border: 1px solid #5D5D5F;
+        box-sizing: border-box;
+    
+        font-size: 16px;
+        color: #000000;
+        outline: none;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    .price button{
+        width: 100%;
+        margin-right: 50px;
+    }
+    .right{
+        font-size: 10px;
+        color: #030305;
+    }
+}
